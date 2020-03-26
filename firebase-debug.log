@@ -1,0 +1,649 @@
+[debug] [2020-03-26T15:54:02.540Z] ----------------------------------------------------------------------
+[debug] [2020-03-26T15:54:02.544Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-03-26T15:54:02.544Z] CLI Version:   7.16.1
+[debug] [2020-03-26T15:54:02.544Z] Platform:      darwin
+[debug] [2020-03-26T15:54:02.544Z] Node Version:  v12.14.0
+[debug] [2020-03-26T15:54:02.554Z] Time:          Thu Mar 26 2020 16:54:02 GMT+0100 (GMT+01:00)
+[debug] [2020-03-26T15:54:02.554Z] ----------------------------------------------------------------------
+[debug] [2020-03-26T15:54:02.554Z] 
+[debug] [2020-03-26T15:54:02.574Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-26T15:54:02.574Z] > authorizing via signed-in user
+[debug] [2020-03-26T15:54:02.575Z] [iam] checking project social-ape-bf22a for permissions ["firebase.projects.get"]
+[debug] [2020-03-26T15:54:02.580Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-26T15:54:02.581Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-26T15:54:02.796Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T15:54:02.809Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/social-ape-bf22a:testIamPermissions  
+
+[debug] [2020-03-26T15:54:03.009Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T15:54:03.011Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/social-ape-bf22a  
+ 
+[debug] [2020-03-26T15:54:03.178Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/juliafrancais/Documents/Git Oclock/socialape-functions'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: functions emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions" for Cloud Functions...
+[debug] [2020-03-26T15:54:03.402Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T15:54:03.413Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-26T15:54:03.413Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T15:54:03.414Z] [worker-~diagnostic~-4878221f-2e44-4849-a6cf-95bd839ef3a8]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33431.sock
+[debug] [2020-03-26T15:54:03.425Z] [worker-~diagnostic~-4878221f-2e44-4849-a6cf-95bd839ef3a8]: BUSY
+[debug] [2020-03-26T15:54:04.575Z] [runtime-status] [33431] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T15:54:04.577Z] [runtime-status] [33431] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T15:54:04.587Z] [runtime-status] [33431] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T15:54:04.589Z] [runtime-status] [33431] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:54:04.592Z] [runtime-status] [33431] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js:45
+    .then(doc => {
+    ^
+
+SyntaxError: Unexpected token '.'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/index.js:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-03-26T15:54:06.390Z] [worker-~diagnostic~-4878221f-2e44-4849-a6cf-95bd839ef3a8]: exited
+[debug] [2020-03-26T15:54:06.391Z] [worker-~diagnostic~-4878221f-2e44-4849-a6cf-95bd839ef3a8]: FINISHED
+[debug] [2020-03-26T15:54:11.475Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T15:54:12.484Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-26T15:54:12.493Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T15:54:12.493Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-26T15:54:12.493Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T15:54:12.494Z] [worker-~diagnostic~-8a4432e6-880b-4328-a82b-5fafdb86d650]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33447.sock
+[debug] [2020-03-26T15:54:12.494Z] [worker-~diagnostic~-8a4432e6-880b-4328-a82b-5fafdb86d650]: BUSY
+[debug] [2020-03-26T15:54:14.057Z] [runtime-status] [33447] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T15:54:14.061Z] [runtime-status] [33447] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T15:54:14.067Z] [runtime-status] [33447] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T15:54:14.072Z] [runtime-status] [33447] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:54:14.074Z] [runtime-status] [33447] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js:45
+    .then(doc => {
+    ^
+
+SyntaxError: Unexpected token '.'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/index.js:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-03-26T15:54:16.088Z] [worker-~diagnostic~-8a4432e6-880b-4328-a82b-5fafdb86d650]: exited
+[debug] [2020-03-26T15:54:16.089Z] [worker-~diagnostic~-8a4432e6-880b-4328-a82b-5fafdb86d650]: FINISHED
+[debug] [2020-03-26T15:54:19.419Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T15:54:19.420Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T15:54:19.421Z] FirebaseError: No trigger with name api
+[debug] [2020-03-26T15:54:19.421Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T15:54:39.833Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T15:54:40.838Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-26T15:54:40.846Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T15:54:40.847Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-26T15:54:40.847Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T15:54:40.848Z] [worker-~diagnostic~-d7d95a20-3d2d-4cb5-a797-f9cf93c30e41]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33471.sock
+[debug] [2020-03-26T15:54:40.848Z] [worker-~diagnostic~-d7d95a20-3d2d-4cb5-a797-f9cf93c30e41]: BUSY
+[debug] [2020-03-26T15:54:41.437Z] [runtime-status] [33471] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T15:54:41.439Z] [runtime-status] [33471] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T15:54:41.444Z] [runtime-status] [33471] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T15:54:41.446Z] [runtime-status] [33471] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:54:41.447Z] [runtime-status] [33471] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js:54
+      screamData.comments = [];
+                ^
+
+SyntaxError: Unexpected token '.'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/index.js:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-03-26T15:54:43.203Z] [worker-~diagnostic~-d7d95a20-3d2d-4cb5-a797-f9cf93c30e41]: exited
+[debug] [2020-03-26T15:54:43.203Z] [worker-~diagnostic~-d7d95a20-3d2d-4cb5-a797-f9cf93c30e41]: FINISHED
+[debug] [2020-03-26T15:54:45.994Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T15:54:45.994Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T15:54:45.994Z] FirebaseError: No trigger with name api
+[debug] [2020-03-26T15:54:45.994Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T15:55:22.910Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T15:55:23.915Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-26T15:55:23.920Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T15:55:23.920Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-26T15:55:23.921Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T15:55:23.921Z] [worker-~diagnostic~-7663f8fe-0297-428c-85d9-2c32ebc9a988]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33512.sock
+[debug] [2020-03-26T15:55:23.921Z] [worker-~diagnostic~-7663f8fe-0297-428c-85d9-2c32ebc9a988]: BUSY
+[debug] [2020-03-26T15:55:25.250Z] [runtime-status] [33512] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T15:55:25.253Z] [runtime-status] [33512] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T15:55:25.258Z] [runtime-status] [33512] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T15:55:25.261Z] [runtime-status] [33512] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:55:25.263Z] [runtime-status] [33512] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5000/social-ape-bf22a/europe-west1/api).
+[debug] [2020-03-26T15:55:28.222Z] [worker-~diagnostic~-7663f8fe-0297-428c-85d9-2c32ebc9a988]: IDLE
+[debug] [2020-03-26T15:55:30.316Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T15:55:30.316Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T15:55:30.316Z] Accepted request GET /social-ape-bf22a/europe-west1/api/scream/DHtNjWRl708dge0VRE1o --> api
+[debug] [2020-03-26T15:55:30.323Z] [worker-pool] addWorker(api)
+[debug] [2020-03-26T15:55:30.323Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-03-26T15:55:30.323Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T15:55:30.323Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33528.sock
+[debug] [2020-03-26T15:55:30.323Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: BUSY
+[debug] [2020-03-26T15:55:31.186Z] [runtime-status] [33528] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T15:55:31.188Z] [runtime-status] [33528] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T15:55:31.237Z] [runtime-status] [33528] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T15:55:31.239Z] [runtime-status] [33528] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:55:31.244Z] [runtime-status] [33528] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:55:32.697Z] [runtime-status] [33528] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T15:55:32.698Z] [runtime-status] [33528] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T15:55:32.698Z] [runtime-status] [33528] Running api in mode HTTPS
+[debug] [2020-03-26T15:55:32.702Z] [runtime-status] [33528] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33528.sock
+[debug] [2020-03-26T15:55:32.722Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T15:55:32.756Z] [runtime-status] [33528] Ephemeral server handling GET request
+[debug] [2020-03-26T15:55:32.765Z] [runtime-status] [33528] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T15:55:33.526Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: IDLE
+[debug] [2020-03-26T15:55:33.527Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T15:56:43.011Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T15:56:43.011Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T15:56:43.011Z] Accepted request GET /social-ape-bf22a/europe-west1/api/scream/DHtNjWRl708dge0VRE1o --> api
+[debug] [2020-03-26T15:56:43.011Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T15:56:43.012Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33528.sock
+[debug] [2020-03-26T15:56:43.015Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: BUSY
+[debug] [2020-03-26T15:56:43.019Z] [runtime-status] [33528] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T15:56:43.020Z] [runtime-status] [33528] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T15:56:43.020Z] [runtime-status] [33528] Running api in mode HTTPS
+[debug] [2020-03-26T15:56:43.020Z] [runtime-status] [33528] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33528.sock
+[debug] [2020-03-26T15:56:43.022Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T15:56:43.038Z] [runtime-status] [33528] Ephemeral server handling GET request
+[debug] [2020-03-26T15:56:43.038Z] [runtime-status] [33528] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T15:56:43.263Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: IDLE
+[debug] [2020-03-26T15:56:43.264Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T15:58:09.691Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T15:58:09.691Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T15:58:09.691Z] Accepted request GET /social-ape-bf22a/europe-west1/api/scream/QqdWfnMyIzzZnH2mRsmO --> api
+[debug] [2020-03-26T15:58:09.692Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T15:58:09.692Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33528.sock
+[debug] [2020-03-26T15:58:09.692Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: BUSY
+[debug] [2020-03-26T15:58:09.694Z] [runtime-status] [33528] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T15:58:09.694Z] [runtime-status] [33528] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T15:58:09.695Z] [runtime-status] [33528] Running api in mode HTTPS
+[debug] [2020-03-26T15:58:09.695Z] [runtime-status] [33528] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33528.sock
+[debug] [2020-03-26T15:58:09.698Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T15:58:09.704Z] [runtime-status] [33528] Ephemeral server handling GET request
+[debug] [2020-03-26T15:58:09.705Z] [runtime-status] [33528] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T15:58:09.859Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: IDLE
+[debug] [2020-03-26T15:58:09.859Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T15:58:14.218Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T15:58:14.219Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T15:58:14.219Z] Accepted request GET /social-ape-bf22a/europe-west1/api/scream/QqdWfnMyIzzZnH2mRsmO --> api
+[debug] [2020-03-26T15:58:14.219Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T15:58:14.219Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33528.sock
+[debug] [2020-03-26T15:58:14.219Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: BUSY
+[debug] [2020-03-26T15:58:14.221Z] [runtime-status] [33528] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T15:58:14.221Z] [runtime-status] [33528] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T15:58:14.221Z] [runtime-status] [33528] Running api in mode HTTPS
+[debug] [2020-03-26T15:58:14.222Z] [runtime-status] [33528] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33528.sock
+[debug] [2020-03-26T15:58:14.224Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T15:58:14.229Z] [runtime-status] [33528] Ephemeral server handling GET request
+[debug] [2020-03-26T15:58:14.229Z] [runtime-status] [33528] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T15:58:14.444Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: IDLE
+[debug] [2020-03-26T15:58:14.445Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T15:59:28.613Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T15:59:29.618Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T15:59:29.618Z] [worker-~diagnostic~-7663f8fe-0297-428c-85d9-2c32ebc9a988]: FINISHING
+[debug] [2020-03-26T15:59:29.619Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-03-26T15:59:29.620Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: FINISHING
+[debug] [2020-03-26T15:59:29.645Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T15:59:29.645Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T15:59:29.645Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T15:59:29.645Z] [worker-~diagnostic~-ae9d0885-7f05-42fe-88cb-9d4324a6c97d]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33688.sock
+[debug] [2020-03-26T15:59:29.646Z] [worker-~diagnostic~-ae9d0885-7f05-42fe-88cb-9d4324a6c97d]: BUSY
+[debug] [2020-03-26T15:59:29.649Z] [worker-~diagnostic~-7663f8fe-0297-428c-85d9-2c32ebc9a988]: exited
+[debug] [2020-03-26T15:59:29.649Z] [worker-~diagnostic~-7663f8fe-0297-428c-85d9-2c32ebc9a988]: FINISHED
+[debug] [2020-03-26T15:59:29.649Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: exited
+[debug] [2020-03-26T15:59:29.649Z] [worker-api-ad0fbff6-3481-47d6-b233-e78798752e0e]: FINISHED
+[debug] [2020-03-26T15:59:30.242Z] [runtime-status] [33688] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T15:59:30.244Z] [runtime-status] [33688] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T15:59:30.248Z] [runtime-status] [33688] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T15:59:30.250Z] [runtime-status] [33688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:59:30.251Z] [runtime-status] [33688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:59:31.624Z] [worker-~diagnostic~-ae9d0885-7f05-42fe-88cb-9d4324a6c97d]: IDLE
+[debug] [2020-03-26T15:59:52.272Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T15:59:53.278Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T15:59:53.278Z] [worker-~diagnostic~-ae9d0885-7f05-42fe-88cb-9d4324a6c97d]: FINISHING
+[debug] [2020-03-26T15:59:53.278Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T15:59:53.278Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-03-26T15:59:53.295Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T15:59:53.296Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T15:59:53.296Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T15:59:53.296Z] [worker-~diagnostic~-ba2c72ac-1a14-487b-b26c-a82665d5f712]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33716.sock
+[debug] [2020-03-26T15:59:53.296Z] [worker-~diagnostic~-ba2c72ac-1a14-487b-b26c-a82665d5f712]: BUSY
+[debug] [2020-03-26T15:59:53.297Z] [worker-~diagnostic~-ae9d0885-7f05-42fe-88cb-9d4324a6c97d]: exited
+[debug] [2020-03-26T15:59:53.297Z] [worker-~diagnostic~-ae9d0885-7f05-42fe-88cb-9d4324a6c97d]: FINISHED
+[debug] [2020-03-26T15:59:54.152Z] [runtime-status] [33716] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T15:59:54.155Z] [runtime-status] [33716] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T15:59:54.163Z] [runtime-status] [33716] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T15:59:54.168Z] [runtime-status] [33716] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:59:54.170Z] [runtime-status] [33716] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:59:55.757Z] [worker-~diagnostic~-ba2c72ac-1a14-487b-b26c-a82665d5f712]: IDLE
+[debug] [2020-03-26T15:59:56.872Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T15:59:56.872Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T15:59:56.872Z] Accepted request GET /social-ape-bf22a/europe-west1/api/scream/QqdWfnMyIzzZnH2mRsmO --> api
+[debug] [2020-03-26T15:59:56.873Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T15:59:56.883Z] [worker-pool] addWorker(api)
+[debug] [2020-03-26T15:59:56.883Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-03-26T15:59:56.883Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T15:59:56.883Z] [worker-api-9f3da933-bbef-4386-a65c-3575d68b7ba8]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33719.sock
+[debug] [2020-03-26T15:59:56.883Z] [worker-api-9f3da933-bbef-4386-a65c-3575d68b7ba8]: BUSY
+[debug] [2020-03-26T15:59:57.433Z] [runtime-status] [33719] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T15:59:57.438Z] [runtime-status] [33719] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T15:59:57.443Z] [runtime-status] [33719] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T15:59:57.446Z] [runtime-status] [33719] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:59:57.449Z] [runtime-status] [33719] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T15:59:59.538Z] [runtime-status] [33719] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T15:59:59.540Z] [runtime-status] [33719] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T15:59:59.541Z] [runtime-status] [33719] Running api in mode HTTPS
+[debug] [2020-03-26T15:59:59.553Z] [runtime-status] [33719] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33719.sock
+[debug] [2020-03-26T15:59:59.562Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T15:59:59.579Z] [runtime-status] [33719] Ephemeral server handling GET request
+[debug] [2020-03-26T15:59:59.585Z] [runtime-status] [33719] Ephemeral server survived.
+[info] >  QqdWfnMyIzzZnH2mRsmO
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T16:00:00.835Z] [worker-api-9f3da933-bbef-4386-a65c-3575d68b7ba8]: IDLE
+[debug] [2020-03-26T16:00:00.835Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T16:05:14.880Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T16:05:15.885Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:05:15.886Z] [worker-~diagnostic~-ba2c72ac-1a14-487b-b26c-a82665d5f712]: FINISHING
+[debug] [2020-03-26T16:05:15.886Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-03-26T16:05:15.886Z] [worker-api-9f3da933-bbef-4386-a65c-3575d68b7ba8]: FINISHING
+[debug] [2020-03-26T16:05:15.903Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:05:15.903Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:05:15.904Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:05:15.904Z] [worker-~diagnostic~-f3460059-b0a8-4edd-a96d-c9d094984306]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33931.sock
+[debug] [2020-03-26T16:05:15.904Z] [worker-~diagnostic~-f3460059-b0a8-4edd-a96d-c9d094984306]: BUSY
+[debug] [2020-03-26T16:05:15.905Z] [worker-~diagnostic~-ba2c72ac-1a14-487b-b26c-a82665d5f712]: exited
+[debug] [2020-03-26T16:05:15.906Z] [worker-~diagnostic~-ba2c72ac-1a14-487b-b26c-a82665d5f712]: FINISHED
+[debug] [2020-03-26T16:05:15.906Z] [worker-api-9f3da933-bbef-4386-a65c-3575d68b7ba8]: exited
+[debug] [2020-03-26T16:05:15.906Z] [worker-api-9f3da933-bbef-4386-a65c-3575d68b7ba8]: FINISHED
+[debug] [2020-03-26T16:05:17.059Z] [runtime-status] [33931] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:05:17.064Z] [runtime-status] [33931] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:05:17.085Z] [runtime-status] [33931] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:05:17.096Z] [runtime-status] [33931] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:05:17.100Z] [runtime-status] [33931] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:05:19.385Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T16:05:19.385Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T16:05:19.386Z] Accepted request GET /social-ape-bf22a/europe-west1/api/scream/QqdWfnMyIzzZnH2mRsmO --> api
+[debug] [2020-03-26T16:05:19.386Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T16:05:19.386Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-03-26T16:05:19.394Z] [worker-pool] addWorker(api)
+[debug] [2020-03-26T16:05:19.394Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-03-26T16:05:19.394Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T16:05:19.395Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33934.sock
+[debug] [2020-03-26T16:05:19.395Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: BUSY
+[debug] [2020-03-26T16:05:20.110Z] [worker-~diagnostic~-f3460059-b0a8-4edd-a96d-c9d094984306]: IDLE
+[debug] [2020-03-26T16:05:20.788Z] [runtime-status] [33934] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:05:20.794Z] [runtime-status] [33934] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:05:20.799Z] [runtime-status] [33934] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:05:20.802Z] [runtime-status] [33934] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:05:20.806Z] [runtime-status] [33934] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:05:22.658Z] [runtime-status] [33934] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T16:05:22.659Z] [runtime-status] [33934] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T16:05:22.659Z] [runtime-status] [33934] Running api in mode HTTPS
+[debug] [2020-03-26T16:05:22.666Z] [runtime-status] [33934] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33934.sock
+[debug] [2020-03-26T16:05:22.679Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T16:05:22.709Z] [runtime-status] [33934] Ephemeral server handling GET request
+[debug] [2020-03-26T16:05:22.716Z] [runtime-status] [33934] Ephemeral server survived.
+[info] >  QqdWfnMyIzzZnH2mRsmO
+[info] >  Error: 9 FAILED_PRECONDITION: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/social-ape-bf22a/firestore/indexes?create_composite=ClFwcm9qZWN0cy9zb2NpYWwtYXBlLWJmMjJhL2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9jb21tZW50cy9pbmRleGVzL18QARoMCghzY3JlYW1JZBABGg0KCWNyZWF0ZWRBdBACGgwKCF9fbmFtZV9fEAI
+[info] >      at callErrorFromStatus (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/@grpc/grpc-js/build/src/call.js:30:26)
+[info] >      at Http2CallStream.<anonymous> (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/@grpc/grpc-js/build/src/call.js:79:34)
+[info] >      at Http2CallStream.emit (events.js:215:7)
+[info] >      at /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/@grpc/grpc-js/build/src/call-stream.js:100:22
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:75:11) {
+[info] >    code: 9,
+[info] >    details: 'The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/social-ape-bf22a/firestore/indexes?create_composite=ClFwcm9qZWN0cy9zb2NpYWwtYXBlLWJmMjJhL2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9jb21tZW50cy9pbmRleGVzL18QARoMCghzY3JlYW1JZBABGg0KCWNyZWF0ZWRBdBACGgwKCF9fbmFtZV9fEAI',
+[info] >    metadata: Metadata { internalRepr: Map {}, options: {} }
+[info] >  }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T16:05:23.718Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: IDLE
+[debug] [2020-03-26T16:05:23.718Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T16:31:23.810Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T16:31:23.813Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T16:31:23.814Z] Accepted request GET /social-ape-bf22a/europe-west1/api/scream/QqdWfnMyIzzZnH2mRsmO --> api
+[debug] [2020-03-26T16:31:23.814Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T16:31:23.816Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33934.sock
+[debug] [2020-03-26T16:31:23.816Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: BUSY
+[debug] [2020-03-26T16:31:23.824Z] [runtime-status] [33934] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T16:31:23.832Z] [runtime-status] [33934] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T16:31:23.832Z] [runtime-status] [33934] Running api in mode HTTPS
+[debug] [2020-03-26T16:31:23.834Z] [runtime-status] [33934] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33934.sock
+[debug] [2020-03-26T16:31:23.842Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T16:31:23.857Z] [runtime-status] [33934] Ephemeral server handling GET request
+[debug] [2020-03-26T16:31:23.860Z] [runtime-status] [33934] Ephemeral server survived.
+[info] >  QqdWfnMyIzzZnH2mRsmO
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T16:31:24.174Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: IDLE
+[debug] [2020-03-26T16:31:24.174Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T16:32:32.014Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T16:32:32.014Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T16:32:32.014Z] Accepted request GET /social-ape-bf22a/europe-west1/api/scream/QqdWfnMyIzzZnH2mRsmO --> api
+[debug] [2020-03-26T16:32:32.014Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T16:32:32.014Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33934.sock
+[debug] [2020-03-26T16:32:32.014Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: BUSY
+[debug] [2020-03-26T16:32:32.015Z] [runtime-status] [33934] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T16:32:32.016Z] [runtime-status] [33934] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T16:32:32.021Z] [runtime-status] [33934] Running api in mode HTTPS
+[debug] [2020-03-26T16:32:32.021Z] [runtime-status] [33934] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_33934.sock
+[debug] [2020-03-26T16:32:32.024Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T16:32:32.028Z] [runtime-status] [33934] Ephemeral server handling GET request
+[debug] [2020-03-26T16:32:32.028Z] [runtime-status] [33934] Ephemeral server survived.
+[info] >  QqdWfnMyIzzZnH2mRsmO
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T16:32:32.284Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: IDLE
+[debug] [2020-03-26T16:32:32.284Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T16:33:47.485Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/index.js changed, reloading triggers
+[debug] [2020-03-26T16:33:48.489Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:33:48.490Z] [worker-~diagnostic~-f3460059-b0a8-4edd-a96d-c9d094984306]: FINISHING
+[debug] [2020-03-26T16:33:48.490Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-03-26T16:33:48.490Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: FINISHING
+[debug] [2020-03-26T16:33:48.526Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:33:48.526Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:33:48.527Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:33:48.527Z] [worker-~diagnostic~-61fa6c11-ab94-41d7-8222-0b0fdd8cba52]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35097.sock
+[debug] [2020-03-26T16:33:48.527Z] [worker-~diagnostic~-61fa6c11-ab94-41d7-8222-0b0fdd8cba52]: BUSY
+[debug] [2020-03-26T16:33:48.528Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: exited
+[debug] [2020-03-26T16:33:48.528Z] [worker-api-fd491bc0-87a3-4d88-b3e8-7eaa195c61a2]: FINISHED
+[debug] [2020-03-26T16:33:48.547Z] [worker-~diagnostic~-f3460059-b0a8-4edd-a96d-c9d094984306]: exited
+[debug] [2020-03-26T16:33:48.547Z] [worker-~diagnostic~-f3460059-b0a8-4edd-a96d-c9d094984306]: FINISHED
+[debug] [2020-03-26T16:33:49.711Z] [runtime-status] [35097] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:33:49.714Z] [runtime-status] [35097] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:33:49.724Z] [runtime-status] [35097] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:33:49.727Z] [runtime-status] [35097] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:33:49.728Z] [runtime-status] [35097] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  ReferenceError: commentOnScream is not defined
+    at Object.<anonymous> (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/index.js:28:47)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:761:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-03-26T16:33:51.941Z] [worker-~diagnostic~-61fa6c11-ab94-41d7-8222-0b0fdd8cba52]: exited
+[debug] [2020-03-26T16:33:51.941Z] [worker-~diagnostic~-61fa6c11-ab94-41d7-8222-0b0fdd8cba52]: FINISHED
+[debug] [2020-03-26T16:33:53.307Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/index.js changed, reloading triggers
+[debug] [2020-03-26T16:33:54.312Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-03-26T16:33:54.312Z] [worker-pool] Cleaned up workers for api: 1 --> 0
+[debug] [2020-03-26T16:33:54.321Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:33:54.321Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-26T16:33:54.321Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:33:54.322Z] [worker-~diagnostic~-839b81c6-2d51-4747-9c76-f424d4192584]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35101.sock
+[debug] [2020-03-26T16:33:54.322Z] [worker-~diagnostic~-839b81c6-2d51-4747-9c76-f424d4192584]: BUSY
+[debug] [2020-03-26T16:33:56.254Z] [runtime-status] [35101] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:33:56.258Z] [runtime-status] [35101] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:33:56.264Z] [runtime-status] [35101] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:33:56.269Z] [runtime-status] [35101] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:33:56.271Z] [runtime-status] [35101] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/express/lib/router/route.js:202:15)
+    at Function.app.<computed> [as post] (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/express/lib/application.js:482:19)
+    at Object.<anonymous> (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/index.js:29:5)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:761:33
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-03-26T16:33:59.356Z] [worker-~diagnostic~-839b81c6-2d51-4747-9c76-f424d4192584]: exited
+[debug] [2020-03-26T16:33:59.356Z] [worker-~diagnostic~-839b81c6-2d51-4747-9c76-f424d4192584]: FINISHED
+[debug] [2020-03-26T16:35:42.434Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T16:35:43.436Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-03-26T16:35:43.443Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:35:43.443Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-26T16:35:43.444Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:35:43.444Z] [worker-~diagnostic~-18c72a34-00f6-43c6-890a-d3d3b4734a4c]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35188.sock
+[debug] [2020-03-26T16:35:43.444Z] [worker-~diagnostic~-18c72a34-00f6-43c6-890a-d3d3b4734a4c]: BUSY
+[debug] [2020-03-26T16:35:44.564Z] [runtime-status] [35188] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:35:44.570Z] [runtime-status] [35188] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:35:44.579Z] [runtime-status] [35188] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:35:44.582Z] [runtime-status] [35188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:35:44.584Z] [runtime-status] [35188] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:35:45.961Z] [worker-~diagnostic~-18c72a34-00f6-43c6-890a-d3d3b4734a4c]: IDLE
+[debug] [2020-03-26T16:36:56.315Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T16:36:57.321Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:36:57.321Z] [worker-~diagnostic~-18c72a34-00f6-43c6-890a-d3d3b4734a4c]: FINISHING
+[debug] [2020-03-26T16:36:57.330Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:36:57.330Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:36:57.331Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:36:57.331Z] [worker-~diagnostic~-f8cbef3a-7516-415a-91df-31b4e5efeac4]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35243.sock
+[debug] [2020-03-26T16:36:57.331Z] [worker-~diagnostic~-f8cbef3a-7516-415a-91df-31b4e5efeac4]: BUSY
+[debug] [2020-03-26T16:36:57.333Z] [worker-~diagnostic~-18c72a34-00f6-43c6-890a-d3d3b4734a4c]: exited
+[debug] [2020-03-26T16:36:57.333Z] [worker-~diagnostic~-18c72a34-00f6-43c6-890a-d3d3b4734a4c]: FINISHED
+[debug] [2020-03-26T16:36:58.257Z] [runtime-status] [35243] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:36:58.259Z] [runtime-status] [35243] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:36:58.264Z] [runtime-status] [35243] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:36:58.269Z] [runtime-status] [35243] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:36:58.275Z] [runtime-status] [35243] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:36:59.840Z] [worker-~diagnostic~-f8cbef3a-7516-415a-91df-31b4e5efeac4]: IDLE
+[debug] [2020-03-26T16:37:41.571Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T16:37:42.573Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:37:42.573Z] [worker-~diagnostic~-f8cbef3a-7516-415a-91df-31b4e5efeac4]: FINISHING
+[debug] [2020-03-26T16:37:42.573Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T16:37:42.578Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:37:42.579Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:37:42.579Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:37:42.579Z] [worker-~diagnostic~-26111ce3-57dc-40f2-b18f-b196235ad656]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35293.sock
+[debug] [2020-03-26T16:37:42.579Z] [worker-~diagnostic~-26111ce3-57dc-40f2-b18f-b196235ad656]: BUSY
+[debug] [2020-03-26T16:37:42.584Z] [worker-~diagnostic~-f8cbef3a-7516-415a-91df-31b4e5efeac4]: exited
+[debug] [2020-03-26T16:37:42.584Z] [worker-~diagnostic~-f8cbef3a-7516-415a-91df-31b4e5efeac4]: FINISHED
+[debug] [2020-03-26T16:37:43.190Z] [runtime-status] [35293] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:37:43.192Z] [runtime-status] [35293] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:37:43.198Z] [runtime-status] [35293] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:37:43.203Z] [runtime-status] [35293] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:37:43.204Z] [runtime-status] [35293] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:37:44.394Z] [worker-~diagnostic~-26111ce3-57dc-40f2-b18f-b196235ad656]: IDLE
+[debug] [2020-03-26T16:38:38.939Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/util/FBAuth.js changed, reloading triggers
+[debug] [2020-03-26T16:38:39.939Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:38:39.939Z] [worker-~diagnostic~-26111ce3-57dc-40f2-b18f-b196235ad656]: FINISHING
+[debug] [2020-03-26T16:38:39.940Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T16:38:39.955Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:38:39.955Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:38:39.956Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:38:39.956Z] [worker-~diagnostic~-b0f49782-0984-42ec-bff3-ac56a20827a2]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35338.sock
+[debug] [2020-03-26T16:38:39.956Z] [worker-~diagnostic~-b0f49782-0984-42ec-bff3-ac56a20827a2]: BUSY
+[debug] [2020-03-26T16:38:39.957Z] [worker-~diagnostic~-26111ce3-57dc-40f2-b18f-b196235ad656]: exited
+[debug] [2020-03-26T16:38:39.957Z] [worker-~diagnostic~-26111ce3-57dc-40f2-b18f-b196235ad656]: FINISHED
+[debug] [2020-03-26T16:38:41.157Z] [runtime-status] [35338] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:38:41.159Z] [runtime-status] [35338] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:38:41.166Z] [runtime-status] [35338] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:38:41.170Z] [runtime-status] [35338] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:38:41.173Z] [runtime-status] [35338] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:38:43.092Z] [worker-~diagnostic~-b0f49782-0984-42ec-bff3-ac56a20827a2]: IDLE
+[debug] [2020-03-26T16:40:21.738Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T16:40:22.744Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:40:22.744Z] [worker-~diagnostic~-b0f49782-0984-42ec-bff3-ac56a20827a2]: FINISHING
+[debug] [2020-03-26T16:40:22.744Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T16:40:22.758Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:40:22.758Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:40:22.758Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:40:22.758Z] [worker-~diagnostic~-ec6964d5-e72f-4745-8a37-8e93970da9a0]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35424.sock
+[debug] [2020-03-26T16:40:22.758Z] [worker-~diagnostic~-ec6964d5-e72f-4745-8a37-8e93970da9a0]: BUSY
+[debug] [2020-03-26T16:40:22.759Z] [worker-~diagnostic~-b0f49782-0984-42ec-bff3-ac56a20827a2]: exited
+[debug] [2020-03-26T16:40:22.759Z] [worker-~diagnostic~-b0f49782-0984-42ec-bff3-ac56a20827a2]: FINISHED
+[debug] [2020-03-26T16:40:23.729Z] [runtime-status] [35424] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:40:23.732Z] [runtime-status] [35424] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:40:23.739Z] [runtime-status] [35424] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:40:23.741Z] [runtime-status] [35424] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:40:23.744Z] [runtime-status] [35424] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:40:26.787Z] [worker-~diagnostic~-ec6964d5-e72f-4745-8a37-8e93970da9a0]: IDLE
+[debug] [2020-03-26T16:42:14.362Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T16:42:15.367Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:42:15.367Z] [worker-~diagnostic~-ec6964d5-e72f-4745-8a37-8e93970da9a0]: FINISHING
+[debug] [2020-03-26T16:42:15.368Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T16:42:15.381Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:42:15.381Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:42:15.381Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:42:15.382Z] [worker-~diagnostic~-d785c64d-67f5-40d3-ac24-b2892dec421d]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35504.sock
+[debug] [2020-03-26T16:42:15.382Z] [worker-~diagnostic~-d785c64d-67f5-40d3-ac24-b2892dec421d]: BUSY
+[debug] [2020-03-26T16:42:15.383Z] [worker-~diagnostic~-ec6964d5-e72f-4745-8a37-8e93970da9a0]: exited
+[debug] [2020-03-26T16:42:15.383Z] [worker-~diagnostic~-ec6964d5-e72f-4745-8a37-8e93970da9a0]: FINISHED
+[debug] [2020-03-26T16:42:16.160Z] [runtime-status] [35504] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:42:16.163Z] [runtime-status] [35504] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:42:16.171Z] [runtime-status] [35504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:42:16.174Z] [runtime-status] [35504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:42:16.176Z] [runtime-status] [35504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:42:18.581Z] [worker-~diagnostic~-d785c64d-67f5-40d3-ac24-b2892dec421d]: IDLE
+[debug] [2020-03-26T16:42:44.781Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T16:42:45.785Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:42:45.785Z] [worker-~diagnostic~-d785c64d-67f5-40d3-ac24-b2892dec421d]: FINISHING
+[debug] [2020-03-26T16:42:45.785Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T16:42:45.791Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:42:45.791Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:42:45.791Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:42:45.791Z] [worker-~diagnostic~-8ea122bf-e9a9-42b8-83df-5d731af7a7a4]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35529.sock
+[debug] [2020-03-26T16:42:45.791Z] [worker-~diagnostic~-8ea122bf-e9a9-42b8-83df-5d731af7a7a4]: BUSY
+[debug] [2020-03-26T16:42:45.793Z] [worker-~diagnostic~-d785c64d-67f5-40d3-ac24-b2892dec421d]: exited
+[debug] [2020-03-26T16:42:45.793Z] [worker-~diagnostic~-d785c64d-67f5-40d3-ac24-b2892dec421d]: FINISHED
+[debug] [2020-03-26T16:42:46.473Z] [runtime-status] [35529] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:42:46.477Z] [runtime-status] [35529] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:42:46.489Z] [runtime-status] [35529] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:42:46.491Z] [runtime-status] [35529] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:42:46.493Z] [runtime-status] [35529] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:42:48.345Z] [worker-~diagnostic~-8ea122bf-e9a9-42b8-83df-5d731af7a7a4]: IDLE
+[debug] [2020-03-26T16:42:52.088Z] File /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/handlers/screams.js changed, reloading triggers
+[debug] [2020-03-26T16:42:53.099Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-26T16:42:53.099Z] [worker-~diagnostic~-8ea122bf-e9a9-42b8-83df-5d731af7a7a4]: FINISHING
+[debug] [2020-03-26T16:42:53.100Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T16:42:53.119Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-26T16:42:53.119Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-26T16:42:53.119Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-26T16:42:53.120Z] [worker-~diagnostic~-42be63cd-b5f3-4ef9-be94-2327d9d1a9ed]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35544.sock
+[debug] [2020-03-26T16:42:53.121Z] [worker-~diagnostic~-42be63cd-b5f3-4ef9-be94-2327d9d1a9ed]: BUSY
+[debug] [2020-03-26T16:42:53.249Z] [worker-~diagnostic~-8ea122bf-e9a9-42b8-83df-5d731af7a7a4]: exited
+[debug] [2020-03-26T16:42:53.251Z] [worker-~diagnostic~-8ea122bf-e9a9-42b8-83df-5d731af7a7a4]: FINISHED
+[debug] [2020-03-26T16:42:54.519Z] [runtime-status] [35544] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:42:54.521Z] [runtime-status] [35544] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:42:54.525Z] [runtime-status] [35544] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:42:54.527Z] [runtime-status] [35544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:42:54.528Z] [runtime-status] [35544] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:42:56.846Z] [worker-~diagnostic~-42be63cd-b5f3-4ef9-be94-2327d9d1a9ed]: IDLE
+[debug] [2020-03-26T16:43:03.782Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T16:43:03.782Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T16:43:03.782Z] Accepted request POST /social-ape-bf22a/us-central1/api/login --> api
+[debug] [2020-03-26T16:43:03.782Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-26T16:43:03.797Z] [worker-pool] addWorker(api)
+[debug] [2020-03-26T16:43:03.798Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-03-26T16:43:03.798Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T16:43:03.798Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35557.sock
+[debug] [2020-03-26T16:43:03.798Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: BUSY
+[debug] [2020-03-26T16:43:05.507Z] [runtime-status] [35557] Functions runtime initialized. {"cwd":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions","node_version":"12.14.0"}
+[debug] [2020-03-26T16:43:05.533Z] [runtime-status] [35557] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-26T16:43:05.563Z] [runtime-status] [35557] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-26T16:43:05.572Z] [runtime-status] [35557] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:43:05.580Z] [runtime-status] [35557] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.5.0","resolution":"/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-26T16:43:08.931Z] [runtime-status] [35557] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T16:43:08.936Z] [runtime-status] [35557] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T16:43:08.936Z] [runtime-status] [35557] Running api in mode HTTPS
+[debug] [2020-03-26T16:43:08.950Z] [runtime-status] [35557] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35557.sock
+[debug] [2020-03-26T16:43:08.968Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T16:43:09.111Z] [runtime-status] [35557] Ephemeral server handling POST request
+[debug] [2020-03-26T16:43:09.207Z] [runtime-status] [35557] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T16:43:10.184Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: IDLE
+[debug] [2020-03-26T16:43:10.185Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T16:44:10.277Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T16:44:10.277Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T16:44:10.277Z] Accepted request POST /social-ape-bf22a/europe-west1/api/scream/QqdWfnMyIzzZnH2mRsmO/comment --> api
+[debug] [2020-03-26T16:44:10.277Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T16:44:10.278Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35557.sock
+[debug] [2020-03-26T16:44:10.278Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: BUSY
+[debug] [2020-03-26T16:44:10.280Z] [runtime-status] [35557] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T16:44:10.281Z] [runtime-status] [35557] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T16:44:10.281Z] [runtime-status] [35557] Running api in mode HTTPS
+[debug] [2020-03-26T16:44:10.281Z] [runtime-status] [35557] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35557.sock
+[debug] [2020-03-26T16:44:10.285Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T16:44:10.291Z] [runtime-status] [35557] Ephemeral server handling POST request
+[debug] [2020-03-26T16:44:10.373Z] [runtime-status] [35557] Ephemeral server survived.
+[info] >  Error while verifying token FirebaseAuthError: Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.
+[info] >      at FirebaseAuthError.FirebaseError [as constructor] (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/utils/error.js:42:28)
+[info] >      at FirebaseAuthError.PrefixedFirebaseError [as constructor] (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/utils/error.js:88:28)
+[info] >      at new FirebaseAuthError (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/utils/error.js:147:16)
+[info] >      at FirebaseTokenVerifier.verifyJWTWithProjectId (/Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/auth/token-verifier.js:166:35)
+[info] >      at /Users/juliafrancais/Documents/Git Oclock/socialape-functions/functions/node_modules/firebase-admin/lib/auth/token-verifier.js:102:26
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+[info] >    errorInfo: {
+[info] >      code: 'auth/argument-error',
+[info] >      message: 'Decoding Firebase ID token failed. Make sure you passed the entire string JWT which represents an ID token. See https://firebase.google.com/docs/auth/admin/verify-id-tokens for details on how to retrieve an ID token.'
+[info] >    },
+[info] >    codePrefix: 'auth'
+[info] >  }
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T16:44:10.381Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: IDLE
+[debug] [2020-03-26T16:44:10.381Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T16:44:17.368Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T16:44:17.368Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T16:44:17.368Z] Accepted request POST /social-ape-bf22a/us-central1/api/login --> api
+[debug] [2020-03-26T16:44:17.368Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T16:44:17.368Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35557.sock
+[debug] [2020-03-26T16:44:17.370Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: BUSY
+[debug] [2020-03-26T16:44:17.374Z] [runtime-status] [35557] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T16:44:17.375Z] [runtime-status] [35557] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T16:44:17.375Z] [runtime-status] [35557] Running api in mode HTTPS
+[debug] [2020-03-26T16:44:17.376Z] [runtime-status] [35557] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35557.sock
+[debug] [2020-03-26T16:44:17.378Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T16:44:17.389Z] [runtime-status] [35557] Ephemeral server handling POST request
+[debug] [2020-03-26T16:44:17.391Z] [runtime-status] [35557] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T16:44:17.878Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: IDLE
+[debug] [2020-03-26T16:44:17.878Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-26T16:44:41.765Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-26T16:44:41.766Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-26T16:44:41.766Z] Accepted request POST /social-ape-bf22a/europe-west1/api/scream/QqdWfnMyIzzZnH2mRsmO/comment --> api
+[debug] [2020-03-26T16:44:41.766Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-26T16:44:41.768Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: Assigning socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35557.sock
+[debug] [2020-03-26T16:44:41.768Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: BUSY
+[debug] [2020-03-26T16:44:41.769Z] [runtime-status] [35557] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-26T16:44:41.770Z] [runtime-status] [35557] triggerDefinition {"regions":["europe-west1"],"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-26T16:44:41.770Z] [runtime-status] [35557] Running api in mode HTTPS
+[debug] [2020-03-26T16:44:41.772Z] [runtime-status] [35557] Attempting to listen to socketPath: /var/folders/3j/y4wfg1nj2wnb6fdb45rsr5580000gs/T/fire_emu_35557.sock
+[debug] [2020-03-26T16:44:41.774Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-26T16:44:41.778Z] [runtime-status] [35557] Ephemeral server handling POST request
+[debug] [2020-03-26T16:44:41.782Z] [runtime-status] [35557] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-26T16:44:42.970Z] [worker-api-e88af3d8-0a12-4b55-9968-9e2536fbc576]: IDLE
+[debug] [2020-03-26T16:44:42.970Z] [work-queue] {"queueLength":0,"workRunningCount":0}
